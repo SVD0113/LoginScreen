@@ -70,7 +70,7 @@ namespace LoginScreen
 
         }
 
-        string myID = "admin"; 
+        string myID = "admin";  
         string myPW = "superman";
 
         private void btnLogin_Click(object sender, EventArgs e)
