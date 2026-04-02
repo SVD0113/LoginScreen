@@ -104,5 +104,10 @@ namespace LoginScreen
                 btnLogin.PerformClick(); // 버튼이눌린것처럼만들기}
             }
         }
+
+        private void btnAllDelete1_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

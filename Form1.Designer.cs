@@ -33,6 +33,9 @@
             this.btnLogin = new System.Windows.Forms.Button();
             this.txtPW = new System.Windows.Forms.TextBox();
             this.lbErrorMsg = new System.Windows.Forms.Label();
+            this.btnAllDelete1 = new System.Windows.Forms.Button();
+            this.btnAllDelete2 = new System.Windows.Forms.Button();
+            this.btnShow = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblAppName
@@ -55,7 +58,7 @@
             this.txtID.Location = new System.Drawing.Point(31, 193);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(480, 37);
-            this.txtID.TabIndex = 2;
+            this.txtID.TabIndex = 1;
             this.txtID.Text = "아이디";
             this.txtID.TextChanged += new System.EventHandler(this.txtID_TextChanged);
             this.txtID.Enter += new System.EventHandler(this.txtID_Enter);
@@ -71,7 +74,7 @@
             this.btnLogin.Location = new System.Drawing.Point(195, 334);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(139, 50);
-            this.btnLogin.TabIndex = 1;
+            this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "로그인";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -84,7 +87,7 @@
             this.txtPW.Location = new System.Drawing.Point(31, 258);
             this.txtPW.Name = "txtPW";
             this.txtPW.Size = new System.Drawing.Size(480, 37);
-            this.txtPW.TabIndex = 3;
+            this.txtPW.TabIndex = 2;
             this.txtPW.Text = "패스워드";
             this.txtPW.Enter += new System.EventHandler(this.txtPW_Enter);
             this.txtPW.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPW_KeyDown);
@@ -97,15 +100,49 @@
             this.lbErrorMsg.Location = new System.Drawing.Point(29, 308);
             this.lbErrorMsg.Name = "lbErrorMsg";
             this.lbErrorMsg.Size = new System.Drawing.Size(229, 12);
-            this.lbErrorMsg.TabIndex = 5;
+            this.lbErrorMsg.TabIndex = 0;
             this.lbErrorMsg.Text = "아이디 또는 패스워드가 잘못 되었습니다.";
             this.lbErrorMsg.Visible = false;
+            // 
+            // btnAllDelete1
+            // 
+            this.btnAllDelete1.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnAllDelete1.Location = new System.Drawing.Point(472, 193);
+            this.btnAllDelete1.Name = "btnAllDelete1";
+            this.btnAllDelete1.Size = new System.Drawing.Size(39, 37);
+            this.btnAllDelete1.TabIndex = 4;
+            this.btnAllDelete1.Text = "X";
+            this.btnAllDelete1.UseVisualStyleBackColor = true;
+            this.btnAllDelete1.Click += new System.EventHandler(this.btnAllDelete1_Click);
+            // 
+            // btnAllDelete2
+            // 
+            this.btnAllDelete2.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnAllDelete2.Location = new System.Drawing.Point(472, 258);
+            this.btnAllDelete2.Name = "btnAllDelete2";
+            this.btnAllDelete2.Size = new System.Drawing.Size(39, 37);
+            this.btnAllDelete2.TabIndex = 5;
+            this.btnAllDelete2.Text = "X";
+            this.btnAllDelete2.UseVisualStyleBackColor = true;
+            // 
+            // btnShow
+            // 
+            this.btnShow.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnShow.Location = new System.Drawing.Point(427, 258);
+            this.btnShow.Name = "btnShow";
+            this.btnShow.Size = new System.Drawing.Size(39, 37);
+            this.btnShow.TabIndex = 6;
+            this.btnShow.Text = "😎";
+            this.btnShow.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(536, 450);
+            this.Controls.Add(this.btnShow);
+            this.Controls.Add(this.btnAllDelete2);
+            this.Controls.Add(this.btnAllDelete1);
             this.Controls.Add(this.lbErrorMsg);
             this.Controls.Add(this.txtPW);
             this.Controls.Add(this.btnLogin);
@@ -126,6 +163,9 @@
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.TextBox txtPW;
         private System.Windows.Forms.Label lbErrorMsg;
+        private System.Windows.Forms.Button btnAllDelete1;
+        private System.Windows.Forms.Button btnAllDelete2;
+        private System.Windows.Forms.Button btnShow;
     }
 }
 
