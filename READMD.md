@@ -10,7 +10,7 @@
     -C#, .NET Windows Forms, Visual Studio, GitHub
 
 -사용한컨트롤:
-    - Label, TextBox, Button
+    - Label, TextBox, Button, visible
 
 -사용한기술과구현한기능: 
     - string 변수로 ID와 PW를 각 설정
@@ -34,3 +34,18 @@
     - if-else문으로 ID와 PW 모두 일치할 때 로그인 / 그렇지않으면 로그인 실패
     - UseSystemPasswordChar로 PW는 *처리하여 비번을 가림
     - KeyDown 이벤트에서 Enter 입력을 받으면 ID->PW, PW->버튼클릭 실행
+
+
+
+    ## 실행화면(과제2)
+
+-과제2 코드의 실행 스크린샷
+![과제2 실행화면](img/실패 메시지.png)
+
+-과제 내용
+    - 로그인 실패 시 에러 메시지 보여주기 / MessageBox 띄우지 않고 보여주기
+
+-구현 내용과 기능 설명
+    - Visible을 활용하여 메시지를 특정 상황에 나왔다없어졌다 조절.
+    - if-else문에서 else(실패)일 때 MessageBox.Show를 활용하여 메시지 박스로 실패 확인을 눌러야 다음이 진행할 수 있게끔 만듬.
+    

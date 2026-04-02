@@ -32,6 +32,7 @@
             this.txtID = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.txtPW = new System.Windows.Forms.TextBox();
+            this.lbErrorMsg = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblAppName
@@ -89,11 +90,23 @@
             this.txtPW.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPW_KeyDown);
             this.txtPW.Leave += new System.EventHandler(this.txtPW_Leave);
             // 
+            // lbErrorMsg
+            // 
+            this.lbErrorMsg.AutoSize = true;
+            this.lbErrorMsg.ForeColor = System.Drawing.Color.Red;
+            this.lbErrorMsg.Location = new System.Drawing.Point(29, 308);
+            this.lbErrorMsg.Name = "lbErrorMsg";
+            this.lbErrorMsg.Size = new System.Drawing.Size(229, 12);
+            this.lbErrorMsg.TabIndex = 5;
+            this.lbErrorMsg.Text = "아이디 또는 패스워드가 잘못 되었습니다.";
+            this.lbErrorMsg.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(536, 450);
+            this.Controls.Add(this.lbErrorMsg);
             this.Controls.Add(this.txtPW);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtID);
@@ -112,6 +125,7 @@
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.TextBox txtPW;
+        private System.Windows.Forms.Label lbErrorMsg;
     }
 }
 
