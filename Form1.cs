@@ -46,6 +46,7 @@ namespace LoginScreen
             {
                 txtPW.Text = "";
                 txtPW.ForeColor = Color.Black;
+                txtPW.UseSystemPasswordChar = true;
             }
         }
 
@@ -53,6 +54,7 @@ namespace LoginScreen
         {
             if (string.IsNullOrWhiteSpace(txtPW.Text))
             {
+                txtPW.UseSystemPasswordChar = false;
                 txtPW.Text = "패스워드";
                 txtPW.ForeColor = Color.Silver;
             }
