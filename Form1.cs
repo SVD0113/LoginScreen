@@ -107,7 +107,17 @@ namespace LoginScreen
 
         private void btnAllDelete1_Click(object sender, EventArgs e)
         {
-            
+            txtID.Text = "";
+        }
+
+        private void btnAllDelete2_Click(object sender, EventArgs e)
+        {
+            txtPW.Text = "";
+        }
+
+        private void btnShow_Click(object sender, EventArgs e)
+        {
+            txtPW.UseSystemPasswordChar = !txtPW.UseSystemPasswordChar;
         }
     }
 }

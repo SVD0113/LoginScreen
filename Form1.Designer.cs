@@ -58,7 +58,7 @@
             this.txtID.Location = new System.Drawing.Point(31, 193);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(480, 37);
-            this.txtID.TabIndex = 1;
+            this.txtID.TabIndex = 2;
             this.txtID.Text = "아이디";
             this.txtID.TextChanged += new System.EventHandler(this.txtID_TextChanged);
             this.txtID.Enter += new System.EventHandler(this.txtID_Enter);
@@ -74,7 +74,7 @@
             this.btnLogin.Location = new System.Drawing.Point(195, 334);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(139, 50);
-            this.btnLogin.TabIndex = 3;
+            this.btnLogin.TabIndex = 1;
             this.btnLogin.Text = "로그인";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -87,7 +87,7 @@
             this.txtPW.Location = new System.Drawing.Point(31, 258);
             this.txtPW.Name = "txtPW";
             this.txtPW.Size = new System.Drawing.Size(480, 37);
-            this.txtPW.TabIndex = 2;
+            this.txtPW.TabIndex = 3;
             this.txtPW.Text = "패스워드";
             this.txtPW.Enter += new System.EventHandler(this.txtPW_Enter);
             this.txtPW.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPW_KeyDown);
@@ -100,7 +100,7 @@
             this.lbErrorMsg.Location = new System.Drawing.Point(29, 308);
             this.lbErrorMsg.Name = "lbErrorMsg";
             this.lbErrorMsg.Size = new System.Drawing.Size(229, 12);
-            this.lbErrorMsg.TabIndex = 0;
+            this.lbErrorMsg.TabIndex = 7;
             this.lbErrorMsg.Text = "아이디 또는 패스워드가 잘못 되었습니다.";
             this.lbErrorMsg.Visible = false;
             // 
@@ -124,6 +124,7 @@
             this.btnAllDelete2.TabIndex = 5;
             this.btnAllDelete2.Text = "X";
             this.btnAllDelete2.UseVisualStyleBackColor = true;
+            this.btnAllDelete2.Click += new System.EventHandler(this.btnAllDelete2_Click);
             // 
             // btnShow
             // 
@@ -134,6 +135,7 @@
             this.btnShow.TabIndex = 6;
             this.btnShow.Text = "😎";
             this.btnShow.UseVisualStyleBackColor = true;
+            this.btnShow.Click += new System.EventHandler(this.btnShow_Click);
             // 
             // Form1
             // 
