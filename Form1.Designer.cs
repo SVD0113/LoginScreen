@@ -52,9 +52,8 @@
             this.txtID.Font = new System.Drawing.Font("굴림", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.txtID.ForeColor = System.Drawing.Color.Silver;
             this.txtID.Location = new System.Drawing.Point(31, 193);
-            this.txtID.Multiline = true;
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(480, 47);
+            this.txtID.Size = new System.Drawing.Size(480, 37);
             this.txtID.TabIndex = 2;
             this.txtID.Text = "아이디";
             this.txtID.TextChanged += new System.EventHandler(this.txtID_TextChanged);
@@ -73,6 +72,7 @@
             this.btnLogin.TabIndex = 1;
             this.btnLogin.Text = "로그인";
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // txtPW
             // 
@@ -80,9 +80,8 @@
             this.txtPW.Font = new System.Drawing.Font("굴림", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.txtPW.ForeColor = System.Drawing.Color.Silver;
             this.txtPW.Location = new System.Drawing.Point(31, 258);
-            this.txtPW.Multiline = true;
             this.txtPW.Name = "txtPW";
-            this.txtPW.Size = new System.Drawing.Size(480, 47);
+            this.txtPW.Size = new System.Drawing.Size(480, 37);
             this.txtPW.TabIndex = 3;
             this.txtPW.Text = "패스워드";
             this.txtPW.Enter += new System.EventHandler(this.txtPW_Enter);

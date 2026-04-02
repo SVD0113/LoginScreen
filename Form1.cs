@@ -69,5 +69,21 @@ namespace LoginScreen
         {
 
         }
+
+        string myID = "admin"; 
+        string myPW = "superman";
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            string inputID = txtID.Text.Trim();
+            string inputPW = txtPW.Text.Trim();
+
+            if (inputID == myID && inputPW == myPW) { 
+                MessageBox.Show("로그인성공!"); 
+            } 
+            else { 
+                MessageBox.Show("로그인실패~"); 
+            }
+        }
     }
 }
