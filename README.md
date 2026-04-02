@@ -23,8 +23,9 @@
 ## 실행화면(과제1)
 
 -과제1 코드의 실행 스크린샷
-![과제1 실행화면](img/로그인 성공.png)
-![과제1 실행화면](img/로그인 실패.png)
+![과제1 실행화면] <img width="535" height="476" alt="로그인 성공" src="https://github.com/user-attachments/assets/db76a2ad-2026-48f2-8b84-4208f2264794" />
+![과제1 실행화면] <img width="526" height="475" alt="로그인 실패" src="https://github.com/user-attachments/assets/afaf2ce8-c36c-438e-8984-39f0da9c3002" />
+
 
 -과제 내용
     - 로그인과 비번 변수를 설정하여 로그인/로그인 실패 창을 생성함. Enter로 키를 넘기고 btn을 실행하는 등의 편의 기능까지 구현함.
